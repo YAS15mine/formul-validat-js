@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>solicodeclub</title>
+
+
+  <!---CSS -->
+  <link rel="stylesheet" href="inter.css">
+  <script src="inter.js" defer></script>
+
+</head>
+
+
+<body>
+
+  <div class="container glass">
+    <div class="title">INSCRIVEZ-VO<span>US  AU CLUB</span></div>
+    <form id="form" name="myform" >
+      <div class="userdetails">
+
+        <div class="inputbox ">
+          <span class="details">Nom</span>
+          <input type="text" id="nom" placeholder="saisir votre Nom">
+          <small></small>
+        </div>
+
+        <div class="inputbox ">
+          <span class="details">Prénom</span>
+          <input type="text" id="prenom" placeholder="saisir votre Prénom">
+          <small></small>
+        </div>
+        <div class="inputbox">
+          <span class="details">Email</span>
+          <input type="text" id="email" placeholder="saisir votre Email">
+          <small></small>
+        </div>
+
+        <div class="inputbox">
+          <span class="details"> Télephone</span>
+          <input type="text" id="telph" placeholder="saisir votre Numr  télephone">
+          <small></small>
+
+
+        </div>
+        <div class="gender-details">
+          <div class="inputbox">
+            <span class="gender-title">Genre :</span>
+            <div class="gender">
+              <label for="rd"><input type="radio" name="genre" id="rd"  value="Féminin"> Féminin</label>
+              <label for="rd"><input type="radio" name="genre" id="rd"   value="Masculin"> Masculin</label>
+            </div>
+            <small></small>
+          </div>
+          <div class="inputbox">
+            <span class="gender-title">Choisissez votre group</span>
+            <select name="format" id="format">
+        
+              <option value="grw1">DW101</option>
+              <option value="grw2">DW102</option>
+              <option value="grw3"> DW103</option>
+              <option value="grm1">DM101</option>
+              <option value="grm2">DM102</option>
+            </select>
+          </div>
+
+            <div class="inputbox">
+              <span class="gender-title">Club(s):</span>
+               <div class="checkboxs">
+                
+                <label ><input type="checkbox" id="check1"  value="Informatique"> Informatique</label>
+                <label ><input  class="" type="checkbox" id="check2" value="Robotique"> Robotique</label>
+                <label ><input type="checkbox" id="check4" value="Musique"> Musique</label>
+                <label><input type="checkbox" id="check5" value="Foot"> Foot</label>
+                <label ><input type="checkbox" id="check6" value="Théatre"> Théatre</label>
+                <label ><input type="checkbox" id="check6" value="Théatre"> jeu d'echecs</label>
+              </div>
+              <div id="confirm"></div>
+            </div>
+          </div>
+      </div>
+      <button type="submit"   onclick="validate()">submit</button>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

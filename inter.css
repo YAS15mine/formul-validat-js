@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Glegoo', serif;
+    }
+
+body{
+  padding: 10%;
+  background-image: url(backgo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+}
+
+.container{
+  max-width: 100%;
+  padding: 10px;
+}
+
+   .title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+   }
+
+  .title span{
+   color: bisque;
+  }
+  .gender-title  {
+  gap: 20px;
+  color: beige;
+  }
+
+
+ 
+.glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     border-radius: 20px;
+     border:1px solid rgba(186, 181, 181, 0.795);
+     box-shadow: 0 0 10px 0 rgba(236, 231, 168, 0.479);
+
+}
+/*---form */
+
+.inputbox{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  color: beige;
+}
+.inputbox select
+{
+  width: 80%;
+  margin-left: 10%; 
+  background-color: bisque;
+}
+.gender
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+}
+
+
+.inputbox input[type=text] {
+  width: 100%;
+  border-bottom: 1px solid bisque;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color:rgb(223, 131, 97);
+  font-size: 15px;
+}
+.inputbox .checkboxs
+{
+  margin-left: 10%; 
+  display: grid;
+  grid-template:auto/ repeat(6,auto);
+  max-width: 100%;
+   gap: 5px;
+}
+.userdetails
+{
+  padding: 20px;
+}
+
+input::placeholder {
+  color:rgba(255, 228, 196, 0.817);
+  opacity: 3;
+  font-weight: 100;
+}
+
+button{
+
+  font-size: 15px;
+  border-radius: 18px;
+  width: 60%;
+  line-height: 40px;
+  background-color:  rgba(186, 181, 181, 0.795);
+  margin-left: 18%;
+}
+button:hover{
+  color:orangered;
+  background-color: bisque;
+}
+
+.inputbox-success input {
+ 
+border-color:#09c372;
+color:rgb(223, 131, 97);
+background: transparent;
+outline: none;
+height: 35px;
+font-size: 15px;
+width: 100%;
+}
+.inputbox-error input  {
+ 
+  border-color: #ff3960;
+  color:rgb(223, 131, 97);
+    background: transparent;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    width: 100%;
+  }
+  small {
+    color:orangered;
+    
+  }
+ 
+
+  @media only screen and ( max-width: 600px) {
+    .inputbox .checkboxs
+    {
+      display: grid;
+      grid-template: repeat(6,auto)/auto;
+       gap: 10px;
+    }
+  }
+
+
+
+
+
